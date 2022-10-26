@@ -1,0 +1,17 @@
+@import '../scss/vars';
+@import 'reset';
+@import 'global';
+
+
+//Pages
+
+@import '../scss/page/home.scss';
+@import '../scss/page/about.scss';
+@import '../scss/page/contact.scss';
+@import '../scss/page/blog.scss';
+
+
+//Media
+
+
+@import '../scss/media.scss';

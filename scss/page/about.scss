@@ -1,0 +1,181 @@
+.about__head {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 323px;
+
+   &__img {
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+
+   &__title {
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 80px;
+      color: $black;
+   }
+}
+
+
+.about__content {
+   padding: 100px 0px;
+
+
+
+   &__title {
+      position: relative;
+      margin-bottom: 45px;
+      max-width: 825px;
+      text-align: left;
+
+   }
+
+   &__text {
+      margin-left: 26%;
+      max-width: 825px;
+
+      &:not(:last-child) {
+         margin-bottom: 30px;
+      }
+   }
+}
+
+.about__video {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 50px;
+
+   & video {
+      width: 60%;
+   }
+}
+
+.detalis {
+   padding: 50px 0px 28px;
+   position: relative;
+
+   &::after {
+      content: '';
+      position: absolute;
+      height: 414px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: url(../images/about/detalis__bg.jpg) center center / cover no-repeat;
+      z-index: -1;
+   }
+
+   &:hover .item__drawings::after {
+      width: 80%;
+   }
+
+   &:hover .item__measurments::after {
+      width: 70%;
+   }
+
+   &:hover .item__analysis::after {
+      width: 75%;
+   }
+
+   &:hover .item__visualization::after {
+      width: 40%;
+   }
+
+   &__img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 300px;
+   }
+
+   &__inner {
+      display: flex;
+      justify-content: center;
+      column-gap: 78px;
+   }
+
+   &__content {
+      max-width: 825px;
+   }
+
+
+   &__title {
+      position: relative;
+      text-align: left;
+      margin-bottom: 40px;
+   }
+
+   &__percent {
+      margin-top: 30px;
+
+      &__item {
+         display: flex;
+         justify-content: space-between;
+         column-gap: 10px;
+         margin-bottom: 33px;
+         border-bottom: 2px solid #FFFFFF;
+         position: relative;
+
+         &::after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            bottom: -2px;
+            left: 0;
+            height: 2px;
+            background-color: #000;
+            transition: width 2s ease-in;
+         }
+
+      }
+
+      &__title {
+         font-family: 'Montserrat';
+         font-weight: 700;
+         font-size: 16px;
+         line-height: 23px;
+         color: $black;
+         margin-bottom: 14px;
+      }
+
+      &__number {
+         font-family: 'Montserrat';
+         font-weight: 700;
+         font-size: 16px;
+         line-height: 23px;
+         color: $black;
+      }
+
+
+   }
+}
+
+
+.about__logos {
+
+   padding: 20px 0px 30px;
+
+   & .container__fluid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      column-gap: 68px;
+
+   }
+
+   &__img {
+      object-fit: cover;
+   }
+
+
+}
+
+.about__collection {
+   padding: 20px 0px 70px;
+}
